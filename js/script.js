@@ -6,7 +6,9 @@ function task1() {
   // ii. Display all child elements of “main-content” element.
   ele = ele.getElementsByTagName("p");
   console.log("Child Elements ==== ", ele);
-
+  for (let ind = 0; ind < ele.length; ind++) {
+    console.log(ele[ind]);
+  }
   // iii. Get all elements of class “render” and show their innerHTML
   // in browser.
   let ele_class = document.getElementsByClassName("render");

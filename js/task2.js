@@ -9,11 +9,17 @@ let ele2 = document.getElementById("lastName");
 console.log("lastName Node Type==== ", ele2.nodeType);
 for(let ind = 0; ind < ele2.childNodes.length ; ind++){
     console.log(`lastName Child Node ${ele2.childNodes[ind].nodeName} Type ==== ", ${ele2.childNodes[ind].nodeType}`);
-
+    
 }
 
 // iii. Update child node of element having id “lastName”.
 ele2.childNodes[0].nodeValue = 'Update Last Name : Zafar';
+
+// iv. Get First and last child of id “main-content”.
+let ele3 = document.getElementById("main-content");
+console.log(`Fisrt Child of main-content ${ele3.firstChild.nodeName} `);
+console.log(`Last Child of main-content ${ele3.lastChild.nodeName} `);
+
 
 // // iii. Get all elements of class “render” and show their innerHTML
 // // in browser.

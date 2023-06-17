@@ -1,11 +1,13 @@
 
 //i. What is node type of element having id “form-content”
 let ele = document.getElementById("form-content");
-console.log("“form-content Nore Type ==== ", ele.nodeType);
+console.log("form-content Node Type ==== ", ele.nodeType);
 
-// ii. Display all child elements of “main-content” element.
-ele = ele.getElementsByTagName("p");
-console.log("Child Elements ==== ", ele);
+// ii. Show node type of element having id “lastName” and its child node.
+
+let ele2 = document.getElementById("lastName");
+console.log("lastName Node Type==== ", ele2.nodeType);
+console.log("lastName Chile Node Type==== ", ele2.childNodes);
 
 // iii. Get all elements of class “render” and show their innerHTML
 // in browser.

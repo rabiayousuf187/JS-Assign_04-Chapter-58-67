@@ -7,7 +7,10 @@ console.log("form-content Node Type ==== ", ele.nodeType);
 
 let ele2 = document.getElementById("lastName");
 console.log("lastName Node Type==== ", ele2.nodeType);
-console.log("lastName Chile Node Type==== ", ele2.childNodes);
+for(let ind = 0; ind < ele2.childNodes.length ; ind++){
+    console.log(`lastName Child Node ${ele2.childNodes[ind].nodeName} Type ==== ", ${ele2.childNodes[ind].nodeType}`);
+
+}
 
 // iii. Get all elements of class “render” and show their innerHTML
 // in browser.

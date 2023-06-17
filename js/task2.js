@@ -21,17 +21,6 @@ console.log(`Fisrt Child of main-content ${ele3.firstChild.nodeName} `);
 console.log(`Last Child of main-content ${ele3.lastChild.nodeName} `);
 
 
-// // iii. Get all elements of class “render” and show their innerHTML
-// // in browser.
-// let ele_class = document.getElementsByClassName("render");
-// // console.log("Child Elements ==== ", ele_class[0].innerHTML);
-// for(let ind= 0 ; ind < ele_class.length ; ind++){
-//     console.log(`Class Element: ${ind} inner HTML: ${ele_class[ind].innerHTML}`)
-// }
-
-// // iv. Fill input value whose element id first-name using javascript.
-// document.getElementById("first-name").value = "Aliena";
-
-// // v. Repeat part iv for id ”last-name” and “email”.
-// document.getElementById("last-name").value = "Fahad";
-// document.getElementById("email").value = "aliena@gmail.com";
+// v. Get next and previous siblings of id “lastName”.
+console.log(`LastName: previous Sibling ${ ele2.previousSibling.nodeName} `);
+console.log(`LastName: next Sibling ${ ele2.nextSibling.nodeName} `);

@@ -24,3 +24,10 @@ console.log(`Last Child of main-content ${ele3.lastChild.nodeName} `);
 // v. Get next and previous siblings of id “lastName”.
 console.log(`LastName: previous Sibling ${ ele2.previousSibling.nodeName} `);
 console.log(`LastName: next Sibling ${ ele2.nextSibling.nodeName} `);
+
+// vi. Get parent node and node type of element having id “email”
+
+let ele4 = document.getElementById("email");
+console.log(`Email: Parent Node = ${ ele4.parentNode.nodeName} `);
+console.log(`Email: Node Type = ${ ele4.nodeType} `);
+
